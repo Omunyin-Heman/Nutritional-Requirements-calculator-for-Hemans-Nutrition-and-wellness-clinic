@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Requirements Calculator</title>
+    <link rel="stylesheet" href="styles/Nutritional requirements.css">
+</head>
+<body>
+    <h1>NUTRITIONAL REQUIREMENTS FOR PATIENTS VISITING HEMANS NUTRITION AND WELLNESS CLINIC</h1>
+    <div class="container">
+        <h1>Nutritional Requirements Calculator</h1>
+        <form id="nutritionForm">
+            <label for="age">Age (years):</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="activityLevel">Activity Level:</label>
+            <select id="activityLevel" name="activityLevel" required>
+                <option value="sedentary">Sedentary</option>
+                <option value="lightlyActive">Lightly Active</option>
+                <option value="moderatelyActive">Moderately Active</option>
+                <option value="veryActive">Very Active</option>
+            </select>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="scripts/Nutritional requirements.js"></script>
+</body>
+</html>
